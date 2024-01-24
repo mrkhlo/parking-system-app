@@ -1,0 +1,21 @@
+{
+  "type": "record",
+  "name": "ParkingApprovedEventAvroModel",
+  "namespace": "mhalo.parking.service.core.domain",
+  "fields": [
+    {
+      "name": "parkingId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "customerId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    }
+  ]
+}

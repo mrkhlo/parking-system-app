@@ -1,0 +1,53 @@
+{
+  "namespace": "mhalo.parking.service.core.domain",
+  "type": "record",
+  "name": "TransactionAvroModel",
+  "fields": [
+    {
+      "name": "transactionId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "providerTransactionId",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "amount",
+      "type": {
+        "type": "bytes",
+        "logicalType": "decimal",
+        "precision": 10,
+        "scale": 2
+      }
+    },
+    {
+      "name": "transactionType",
+      "type": {
+        "type": "enum",
+        "name": "TransactionTypeAvroModel",
+        "symbols": ["DEBIT", "CREDIT"]
+      }
+    },
+    {
+      "name": "transactionStatus",
+      "type": {
+        "type": "enum",
+        "name": "TransactionStatusAvroModel",
+        "symbols": ["SUCCESS", "FAILURE"]
+      }
+    },
+    {
+      "name": "executedAt",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

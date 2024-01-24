@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "PaymentRefundEventAvroModel",
+  "namespace": "mhalo.parking.service.core.domain",
+  "fields": [
+    {
+      "name": "payment",
+      "type": "mhalo.parking.service.core.domain.PaymentAvroModel"
+    }
+  ]
+}

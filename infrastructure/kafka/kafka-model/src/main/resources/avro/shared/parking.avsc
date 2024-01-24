@@ -1,0 +1,75 @@
+{
+    "namespace": "mhalo.parking.service.core.domain",
+    "type": "record",
+    "name": "ParkingAvroModel",
+    "fields": [
+        {
+            "name": "parkingId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "customerId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "zoneId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "trackingId",
+            "type": {
+                "type": "string",
+                "logicalType": "uuid"
+            }
+        },
+        {
+            "name": "licensePlateNumber",
+            "type": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "startingFee",
+            "type": {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 2
+            }
+        },
+        {
+            "name": "closingFee",
+            "type": ["null", {
+                "type": "bytes",
+                "logicalType": "decimal",
+                "precision": 10,
+                "scale": 2
+            }],
+            "default": null
+        },
+        {
+            "name": "startedAt",
+            "type": {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            }
+        },
+        {
+            "name": "stoppedAt",
+            "type": ["null", {
+                "type": "long",
+                "logicalType": "timestamp-millis"
+            }],
+            "default": null
+        }
+    ]
+}
