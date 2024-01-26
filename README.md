@@ -1,5 +1,5 @@
 # Parking system application
-This project was created as a practice project after finishing this amazing course on Udemy: https://capgemini.udemy.com/course/microservices-clean-architecture-ddd-saga-outbox-kafka-kubernetes
+This project was created as a practice project after finishing this amazing course on Udemy: https://www.udemy.com/course/microservices-clean-architecture-ddd-saga-outbox-kafka-kubernetes
 The business logic I have created here is very very simple. The main focus was on the concepts discussed in the course.
 
 ## About the project:
