@@ -1,6 +1,6 @@
 # Parking system application
 This project was created as a practice project after finishing this amazing course on Udemy: https://www.udemy.com/course/microservices-clean-architecture-ddd-saga-outbox-kafka-kubernetes
-The business logic I have created here is very very simple. The main focus was on the concepts discussed in the course.
+The business logic I have created here is very very simple. You start the parking and get charged for the whole day. Whenever the parking is stopped, the allocated time that was not used within the parking zone's paid interval is refunded to the customer. The main focus was on the concepts discussed in the course.
 
 ## About the project:
 **Concepts/technologies that are utilized**: 
