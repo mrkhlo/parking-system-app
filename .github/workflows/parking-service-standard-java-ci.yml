@@ -1,0 +1,21 @@
+name: Parking Service Standard Java CI Workflow
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - 'main'
+    paths:
+      - 'parking-service/**'
+      - 'infrastructure/**'
+      - 'common/**'
+      - 'pom.xml'
+  workflow_dispatch:
+
+jobs:
+  standard-java-ci-wf:
+    uses: mrkhlo/parking-app-gha-workflows/.github/workflows/module-main-workflow.yml@main
+    secrets: inherit
+    with:
+      SERVICE_MODULE_NAME: parking-service/parking-container
+      SERVICE_IMAGE_NAME: parking.service
+      DOCKERHUB_SERVICE_REPOSITORY_NAME: parking-service

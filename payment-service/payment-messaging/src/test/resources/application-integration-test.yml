@@ -1,0 +1,42 @@
+kafka-config:
+  schema-registry-url: mock://dummy
+  schema-registry-url-key: schema.registry.url
+  bootstrap-servers: dummy # overwritten dynamically with test container servers address
+  num-of-partitions: 1
+  replication-factor: 1
+
+kafka-producer-config:
+  key-serializer-class: org.apache.kafka.common.serialization.StringSerializer
+  value-serializer-class: io.confluent.kafka.serializers.KafkaAvroSerializer
+  compression-type: snappy
+  acks: all
+  batch-size: 16384
+  batch-size-boost-factor: 100
+  linger-ms: 5
+  request-timeout-ms: 60000
+  retry-count: 5
+  enable-idempotence: false
+
+kafka-consumer-config:
+  key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+  auto-offset-reset: earliest
+  specific-avro-reader-key: specific.avro.reader
+  specific-avro-reader: true
+  batch-listener: false
+  auto-startup: true
+  concurrency-level: 1
+  session-timeout-ms: 10000
+  heartbeat-interval-ms: 3000
+  max-poll-interval-ms: 300000
+  poll-timeout-ms: 150
+  retry-count: 3
+  retry-backoff-ms: 100
+
+payment-service:
+  parking-created-event-topic-name: parking-created
+  parking-stopped-event-topic-name: parking-stopped
+  parking-approved-event-topic-name: parking-approved
+  payment-debit-event-topic-name: payment-debit
+  payment-refund-event-topic-name: payment-refund
+  payment-service-consumer-group-id: payment-service

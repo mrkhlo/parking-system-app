@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <springProperty name="app-name" source="spring.application.name" />
+
+    <property name="DEV_HOME" value="./${app-name}}/logs"/>
+    <property name="APP_NAME" value="${app-name}"/>
+
+    <include resource="logback-common.xml"/>
+</configuration>

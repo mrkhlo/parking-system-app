@@ -1,0 +1,21 @@
+name: Zone Service Standard Java CI Workflow
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - 'main'
+    paths:
+      - 'zone-service/**'
+      - 'infrastructure/**'
+      - 'common/**'
+      - 'pom.xml'
+  workflow_dispatch:
+
+jobs:
+  standard-java-ci-wf:
+    uses: mrkhlo/parking-app-gha-workflows/.github/workflows/module-main-workflow.yml@main
+    secrets: inherit
+    with:
+      SERVICE_MODULE_NAME: zone-service
+      SERVICE_IMAGE_NAME: zone.service
+      DOCKERHUB_SERVICE_REPOSITORY_NAME: zone-service

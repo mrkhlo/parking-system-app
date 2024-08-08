@@ -1,0 +1,21 @@
+name: Payment Service Standard Java CI Workflow
+on:
+  push:
+    branches:
+      - 'feature/**'
+      - 'main'
+    paths:
+      - 'payment-service/**'
+      - 'infrastructure/**'
+      - 'common/**'
+      - 'pom.xml'
+  workflow_dispatch:
+
+jobs:
+  standard-java-ci-wf:
+    uses: mrkhlo/parking-app-gha-workflows/.github/workflows/module-main-workflow.yml@main
+    secrets: inherit
+    with:
+      SERVICE_MODULE_NAME: payment-service/payment-container
+      SERVICE_IMAGE_NAME: payment.service
+      DOCKERHUB_SERVICE_REPOSITORY_NAME: payment-service

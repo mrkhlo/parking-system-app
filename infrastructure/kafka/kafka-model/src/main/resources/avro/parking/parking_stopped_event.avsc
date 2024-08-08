@@ -1,0 +1,11 @@
+{
+  "type": "record",
+  "name": "ParkingStoppedEventAvroModel",
+  "namespace": "mhalo.parking.service.core.domain",
+  "fields": [
+    {
+      "name": "parking",
+      "type": "mhalo.parking.service.core.domain.ParkingAvroModel"
+    }
+  ]
+}

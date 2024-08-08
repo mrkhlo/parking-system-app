@@ -1,0 +1,10 @@
+kafka-config:
+  schema-registry-url: mock://dummy
+  num-of-partitions: 1
+  replication-factor: 1
+
+kafka-consumer-config:
+  auto-startup: true
+  concurrency-level: 1
+  retry-count: 3
+  retry-backoff-ms: 100

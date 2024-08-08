@@ -1,0 +1,6 @@
+outbox.scheduling.enabled: false
+kafka-consumer-config:
+  auto-startup: false
+logging:
+  level:
+    root: debug
