@@ -46,8 +46,8 @@ This module glues together all the other modules into a working application. Boo
 [<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/5457702-82280204-2ece-40bf-950d-58ff0b4edeaf?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D5457702-82280204-2ece-40bf-950d-58ff0b4edeaf%26entityType%3Dcollection%26workspaceId%3D90db576c-cc7d-41d5-aae2-f027387a7cb8#?env%5BLocal%5D=W3sia2V5IjoidmFyLnRyYWNraW5nLmlkIiwidmFsdWUiOiIiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiYW55In0seyJrZXkiOiJ2YXIucGFya2luZy5pZCIsInZhbHVlIjoiIiwiZW5hYmxlZCI6dHJ1ZSwidHlwZSI6ImFueSJ9LHsia2V5IjoidmFyLmJhc2UudXJsIiwidmFsdWUiOiJodHRwOi8vbG9jYWxob3N0OjgxODEiLCJlbmFibGVkIjp0cnVlLCJ0eXBlIjoiZGVmYXVsdCJ9XQ==)
 
 <p float="left">
-  <img src="https://github.com/mrkhlo/parking-system-app/assets/38752660/aa2ced58-ceba-40c5-8e46-5d064b2a489c" alt="start-parking" width="45%">
-  <img src="https://github.com/mrkhlo/parking-system-app/assets/38752660/e4c6d3f9-4bca-46e6-805a-1c318f3dcc02" alt="start-parking" width="45%">
+  <img src="assets/start-parking.jpg" alt="start-parking" width="45%">
+  <img src="assets/stop-parking.jpg" alt="start-parking" width="45%">
 </p>
 
 ## Run the application locally:
